@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>لعبة تخمين الأعلام</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1 id="title">🎌 لعبة تخمين الأعلام</h1>
+      <select id="language-select">
+        <option value="ar">العربية</option>
+        <option value="en">English</option>
+        <option value="fr">Français</option>
+        <option value="zh">中文</option>
+        <option value="de">Deutsch</option>
+        <option value="it">Italiano</option>
+        <option value="es">Español</option>
+        <option value="pt">Português</option>
+        <option value="el">Ελληνικά</option>
+        <option value="tr">Türkçe</option>
+      </select>
+    </header>
+
+    <main>
+      <img id="flag" src="" alt="علم الدولة" />
+      <div id="choices"></div>
+      <div id="result"></div>
+      <button id="next-btn">➡ التالي</button>
+    </main>
+  </div>
+
+  <audio id="click-sound" src="sounds/click.mp3" preload="auto"></audio>
+  <audio id="success-sound" src="sounds/correct.mp3" preload="auto"></audio>
+  <audio id="fail-sound" src="sounds/wrong.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
